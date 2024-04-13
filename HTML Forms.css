@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  position: absolute;
+  top: 0;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background: rgba(0, 21, 255, 0.425);
+
+  height: 80vh;
+  width: 90vw;
+  box-shadow: 5px 3px 3px 5px rgba(62, 10, 184, 0.546),
+    -10px 2px 2px 5px rgb(79, 79, 79), 5px 5px 5px 10px rgb(79, 79, 79);
+  border-radius: 5px;
+}
+
+form label {
+  margin: 10px;
+  color: white;
+}
+
+.FirstName {
+  width: 430px;
+}
+
+form input {
+  color: black;
+  outline: none;
+  border: none;
+  border: 1px solid orange;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.term-condition input {
+  height: 1.2em;
+  width: 1.2em;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 376px) {
+  form {
+    height: 70vh;
+    margin-top: 10px;
+  }
+
+  .FirstName {
+    width: 290px;
+  }
+}
+
+@media screen and (min-width: 390px) {
+  form {
+    height: 50vh;
+  }
+
+  .FirstName {
+    width: 340px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  form {
+    width: 50vw;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  form {
+    width: 45vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  form {
+    width: 35vw;
+    height: 70vh;
+  }
+}
